@@ -58,5 +58,6 @@ async def on_message(message):
                                                         dothething[str(message.server.id)]=0
                                 else:
                                         await asyncio.sleep(10)
+                                        
 client.run(os.getenv('TOKEN'))
 
