@@ -5,6 +5,8 @@ default_role="RAINBOW"
 import discord
 import os
 import asyncio
+from discord.ext import commands
+from discord.ext.commands import Bot
 from time import sleep
 from colorsys import hls_to_rgb
 client = discord.Client()
