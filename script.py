@@ -53,6 +53,7 @@ async def on_message(message):
                                                 rgb = [int(x*255) for x in hls_to_rgb(hue/360, 0.5, 1)]
                                                 await asyncio.sleep(1/5)
                                                 clr = discord.Colour(((rgb[0]<<16) + (rgb[1]<<8) + rgb[2]))
+                                                await asyncio.sleep(0.5)
                                                 try:
                                                         await client.edit_role(message.server, role, colour=clr)
                                                 except:
