@@ -60,7 +60,7 @@ async def on_message(message):
                                                         print("no perms" + str(message.server.name))
                                                         dothething[str(message.server.id)]=0
                                 else:
-                                        await asyncio.sleep(10)
+                                        #await asyncio.sleep(10)
                                         
 client.run(os.getenv('TOKEN'))
 
